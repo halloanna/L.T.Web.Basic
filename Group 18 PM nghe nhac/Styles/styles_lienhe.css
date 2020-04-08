@@ -1,0 +1,55 @@
+﻿#main{
+   
+    margin-top: 70px;
+}
+#main #left{
+    background: #000000;
+    opacity: 0.8;
+   
+}
+#main #right {
+    background: #808080;
+    opacity: 0.8;
+}
+
+#right #but-submit{
+    font-family:Arial;
+    font-size: larger;
+    background: #725dbb;
+    color:white;
+}
+#captainright{
+    margin: 40px auto;
+    text-align: center;
+    color:black;
+    font-family:'Times New Roman', Times, serif;
+    font-size:40px;
+    font-weight: bold;
+
+}
+#captainteam {
+    margin: 40px auto;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+table {
+    border-collapse: collapse;
+
+}
+th {
+    background: #008040;
+    color: white;
+}
+
+th, td {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+tr:hover {
+    background-color: #ddd;
+}

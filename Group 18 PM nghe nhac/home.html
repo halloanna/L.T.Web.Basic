@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>ĐỒ ÁN WEB</title>
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" href="StyleSheet.css" />
+    <link href="Styles/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="JavaScript.js"></script>
+    <link rel="stylesheet" href="Content/font-awesome.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top ">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html"><span class="fa fa-home fa-lg"></span></a></li>
+                    <li><a href="home.html">Home<i></i></a></li>
+                    <li><a href="News.html">Tin tức</a></li>
+                    <li><a href="baihat.html">Bài hát</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#User"><img class="img-thumbnail" id="thumbnail" src="Images/img-thumbnail.png" width="19" height="19" /></a></li>
+                    <li><a href="SignUp.html"><span class="fa fa-user"></span> Sign Up</a></li>
+                    <li><a href="Login.html"><span class="fa fa-sign-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="div-centre" class="container-fluid text-primary ">
+        <div class="row content">
+            <div id="sidebar-left" class="col-lg-3 col-md-3 col-sm-3 clearfix sidenav left">
+                <div class="list left">
+                    <h2>Top 5 bài hát mới nhất</h2>
+                    <a href="News.html" class="list-group-item ">
+                        <h4 class="list-group-item-heading"><img src="Images/list-bat-hat-yeu-thich-1.jpg" width="35" height="35" /> Ai là người thương em </h4>
+                        <p class="list-group-item-text fa fa-play-circle">Quân A.P </p>
+                    </a>
+                    <a href="News.html" class="list-group-item">
+                        <h4 class="list-group-item-heading"><img src="img/different_world.jpg" width="35" height="35" />Different World</h4>
+                        <p class="list-group-item-text fa fa-play-circle">Allan Walker</p>
+                    </a>
+                    <a href="News.html" class="list-group-item">
+                        <h4 class="list-group-item-heading"><img src="img/criminal.jpg" width="35" height="35" />Criminal</h4>
+                        <p class="list-group-item-text fa fa-play-circle">Britney Spears</p>
+                    </a>
+                    <a href="News.html" class="list-group-item">
+                        <h4 class="list-group-item-heading"><img src="img/until.jpg" width="35" height="35" />Until You</h4>
+                        <p class="list-group-item-text fa fa-play-circle">Shayne Ward</p>
+                    </a>
+                    <a href="News.html" class="list-group-item">
+                        <h4 class="list-group-item-heading"><img src="Images/list-bat-hat-yeu-thich-5.jpg" width="35" height="35" />Anh Ơi Ở Lại</h4>
+                        <p class="list-group-item-text fa fa-play-circle">Chi Pu, Đạt G</p>
+                    </a>
+                </div>
+            </div>
+            <div id="slide-show" class="col-lg-6 col-md-6 col-sm-6 text-left  ">
+                <div id="myCarousel" class="carousel slide " data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="Images/slide1.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="Images/slide2.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="Images/slide3.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="Images/slide4.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="Images/slide5.jpg">
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="sr-only">Previous</span>
+                        <span class="glyphicon glyphicon-chevron-left fa fa-chevron-left" aria-hidden="true"></span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="sr-only">Next</span>
+                        <span class="glyphicon glyphicon-chevron-right fa fa-chevron-right" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <!--link scrip vs css music-->
+
+                <link rel="stylesheet" href="css/stylesheets/style.css">
+                <script src="js/jquery-1.7.2.min.js" ></script>             
+                <div id="player">
+                    <div class="cover"></div>
+                    <div class="ctrl">
+                        <div class="tag">
+                            <strong>Title</strong>
+                            <span class="artist">Artist</span>
+                            <span class="album">Album</span>
+                        </div>
+                        <div class="control">
+                            <div class="left">
+                                <div class="rewind icon"></div>
+                                <div class="playback icon"></div>
+                                <div class="fastforward icon"></div>
+                            </div>
+                            <div class="volume right">
+                                <div class="mute icon left"></div>
+                                <div class="slider left">
+                                    <div class="pace"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="slider">
+                                <div class="loaded"></div>
+                                <div class="pace"></div>
+                            </div>
+                            <div class="timer left">0:00</div>
+                            <div class="right">
+                                <div class="repeat icon"></div>
+                                <div class="shuffle icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul id="playlist"></ul>
+                <script src="js/jquery-ui-1.8.17.custom.min.js"></script>
+                <script src="js/script.js"></script>
+
+
+
+
+
+                <hr>
+                <div id="comment">
+                    <h2>Bình luận</h2>
+                    <div class="media">
+                        <div class="media-left media-top">
+                            <img src="Images/img_avatar1.png" class="media-object" style="width:80px">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">John <small><i>Posted on June 1, 2019</i></small></h4>
+                            <p>Mong bài hát này sẽ ra MV</p>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="Images/img_avatar2.png" class="media-object" style="width:45px">
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">John Doe <small><i>Posted on June 1, 2019</i></small></h4>
+                                    <p>Cảm ơn bạn đã quan tâm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <img src="Images/img_avatar2.png" class="media-object" style="width:80px">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Robin</h4>
+                            <p>Tôi đã nghe liên tục bài hát này suốt 3h</p>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="media">
+                        <div class="media-left media-bottom">
+                            <img src="Images/img_avatar3.png" class="media-object" style="width:80px">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Jack <small><i>Posted on June 1, 2019</i></small></h4>
+                            <p>Wow, Bài hát này thật tuyệt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar-right" class="col-lg-3 col-md-3 col-sm-3 sidenav left">
+                <ul class="list right">
+                    <h2>Thông tin mới nhất</h2>
+                    <li class="list-group-item">
+                        <p><img src="Images/thang_5__thumb.jpg" align="left" height="120" width="120" /></p>
+                        <p><a href=""><strong>Vpop tháng 5 - ai đủ sức ‘lật đổ’ Min và Chi Pu?</strong></a></p>
+                        <p>Min và Chi Pu là tâm điểm của đường đua nhạc Việt thời gian qua. Thế nhưng, vẫn có một cái tên bất ngờ soán ngôi hai cô gái này.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p><img src="Images/thumb_tan_binh.jpg" align="left" height="120" width="120" /></p>
+                        <p><a href=""><strong>Bộ tứ tân binh khiến các sao lớn của Vpop phải dè chừng</strong></a></p>
+                        <p>Jack, AMEE, Quân A.P, Thịnh Suy là những gương mặt mới của Vpop. Họ được khán giả chú ý nhờ các sản phẩm âm nhạc nổi bật trên #zingchart chỉ trong thời gian ngắn.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p><img src="Images/maxresdefault_1.jpg" align="left" height="120" width="120" /></p>
+                        <p><a href=""><strong> Chủ nhân hit 'Hồng nhan' dẫn đầu Vpop, vượt Min và nhiều sao Việt</strong></a></p>
+                        <p>Sau thành công của 2 bài hit "Hồng nhan" và "Bạc phận", Jack vượt qua Min và nhiều tên tuổi lớn của Vpop để dẫn đầu BXH nhạc Việt với ca khúc mới "Sao em vô tình".</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p><img src="Images/ameeeeee.gif" align="left" height="120" width="120" /></p>
+                        <p><a href=""><strong>Trước mỹ nữ 10X AMEE, những cô nàng 'kẹo ngọt' nào từng gây sốt Vpop</strong></a></p>
+                        <p>Bên cạnh AMEE "gây bão" thời gian gần đây, Phương Ly, Han Sara hay Suni Hạ Linh cũng được khán giả yêu thích khi gắn liền với hình ảnh “cô nàng kẹo ngọt” trên con đường ca hát.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p><img src="Images/61025317_2349601262032439_8509067800994643968_n_thumb.jpg" align="left" height="120" width="120" /></p>
+                        <p><a href=""><strong>Giám khảo Adtima Ignite: Ứng viên sẽ tạo nên tương lai cho Marketing</strong></a></p>
+                        <p>Sự sáng tạo và niềm đam mê là điều đã được các ứng viên Adtima Ignite 2019 thể hiện tại vòng chung kết Adtima Ignite 2019.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Nhóm<span>18</span></h3>
+            <p class="footer-links">
+                <a href="home.html">Home</a>
+                ·
+                <a href="News.html">Tin tức</a>
+                ·
+                <a href="baihat.html">Bài hát</a>
+                ·
+                <a href="lienhe.html">Liên hệ</a>
+            </p>
+            <p class="footer-company-name">&copy; 2019</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-location-arrow"></i>
+                <p><span>Trường Đại Học Ngoại Ngữ - Tin Học TP.HCM (HUFLIT)</span><a href="https://goo.gl/maps/rL1cZpM8DMkt2Yxu9"> 155 Sư Vạn Hạnh (nd), Phường 13, Quận 10, TP.HCM</a></p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>(+84 28) 38 632 052 - 38 629 232 </p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:khoacntt@huflit.edu.vn">khoacntt@huflit.edu.vn</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Tổng quan về chúng tôi</span>
+                Nhóm lý thuyết môn lập trình web thứ 7 ca tiết 7-9
+            </p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/huflit.edu.vn/"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+</body>
+</html>
